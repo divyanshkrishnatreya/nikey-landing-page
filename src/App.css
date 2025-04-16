@@ -1,0 +1,242 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* Custom Font Sizes */
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.text-lg {
+  font-size: 18px;
+  line-height: 21.94px;
+}
+
+.text-xl {
+  font-size: 20px;
+  line-height: 24.38px;
+}
+
+.text-2xl {
+  font-size: 24px;
+  line-height: 29.26px;
+}
+
+.text-3xl {
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.text-4xl {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.text-8xl {
+  font-size: 96px;
+  line-height: 106px;
+}
+
+/* Custom Font Families */
+.font-palanquin {
+  font-family: "Palanquin", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Custom Colors - Separated for background and text */
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 238, 255, var(--tw-bg-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgba(236, 238, 255, var(--tw-text-opacity));
+}
+
+.bg-coral-red {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 100, 82, var(--tw-bg-opacity));
+}
+
+.text-coral-red {
+  --tw-text-opacity: 1;
+  color: rgba(255, 100, 82, var(--tw-text-opacity));
+}
+
+.bg-slate-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(109, 109, 109, var(--tw-bg-opacity));
+}
+
+.text-slate-gray {
+  --tw-text-opacity: 1;
+  color: rgba(109, 109, 109, var(--tw-text-opacity));
+}
+
+.bg-pale-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 246, 255, var(--tw-bg-opacity));
+}
+
+.text-pale-blue {
+  --tw-text-opacity: 1;
+  color: rgba(245, 246, 255, var(--tw-text-opacity));
+}
+
+.bg-white-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.text-white-400 {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Custom Box Shadow */
+.shadow-3xl {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Background Images */
+.bg-hero {
+  background-image: url("assets/images/collection-background.svg");
+}
+
+.bg-card {
+  background-image: url("assets/images/thumbnail-background.svg");
+}
+
+/* Custom Screen */
+@media (min-width: 1440px) {
+  .wide\:block {
+    display: block;
+  }
+
+  /* Add other wide: variants as needed */
+}
+
+
+
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.input {
+  flex: 1 1 0%;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #6d6d6d;
+  padding-left: 1.25rem;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 640px) {
+  .input {
+    width: 100%;
+    padding: 1.25rem;
+    border: 1px solid #6d6d6d;
+    border-radius: 9999px;
+  }
+}
+
+.padding {
+  padding: 3rem 2rem;
+}
+
+@media (min-width: 640px) {
+  .padding {
+    padding: 6rem 4rem;
+  }
+}
+
+.padding-x {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+  .padding-x {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.padding-y {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .padding-y {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.padding-l {
+  padding-left: 2rem;
+}
+
+@media (min-width: 640px) {
+  .padding-l {
+    padding-left: 4rem;
+  }
+}
+
+.padding-r {
+  padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+  .padding-r {
+    padding-right: 4rem;
+  }
+}
+
+.padding-t {
+  padding-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .padding-t {
+    padding-top: 6rem;
+  }
+}
+
+.padding-b {
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .padding-b {
+    padding-bottom: 6rem;
+  }
+}
+
+.info-text {
+  font-family: "Montserrat", sans-serif;
+  color: #6d6d6d;
+  font-size: 18px;
+  line-height: 1.75rem;
+}
