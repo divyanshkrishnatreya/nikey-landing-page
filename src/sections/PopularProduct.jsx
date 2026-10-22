@@ -3,8 +3,8 @@ import { products } from "../constants";
 import PopularProductCard from "../components/PopularProductCard.jsx";
 const PopularProduct = () => {
   return (
-    <section id="products" className="max-container max sm:mt-12">
-      <div className="fle flex-col justify-start gap-5">
+    <section id="products" className="max-container sm:mt-12">
+      <div className="flex flex-col justify-start gap-5">
         <h2 className="text-4xl font-palanquin font-bold">
           Our <span className="text-coral-red">Popular </span>Products
         </h2>

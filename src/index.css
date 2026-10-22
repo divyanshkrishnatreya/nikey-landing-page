@@ -1,4 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Palanquin:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
 
+@theme {
+  --color-primary: #eceeff;
+  --color-coral-red: #ff6452;
+  --color-slate-gray: #6d6d6d;
+  --color-pale-blue: #f5f6ff;
+  --color-white-400: rgb(255 255 255 / 80%);
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-palanquin: "Palanquin", sans-serif;
+  --shadow-3xl: 0 10px 40px rgb(0 0 0 / 10%);
+  --breakpoint-wide: 90rem;
+  --background-image-hero: url("./assets/images/collection-background.svg");
+  --background-image-card: url("./assets/images/thumbnail-background.svg");
+}
 
+@layer base {
+  body {
+    margin: 0;
+    min-width: 320px;
+  }
 
+  button {
+    cursor: pointer;
+  }
+}
 
+@utility max-container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@utility padding {
+  padding: 3rem 2rem;
+  @media (width >= 40rem) {
+    padding: 6rem 4rem;
+  }
+}
+
+@utility padding-x {
+  padding-inline: 2rem;
+  @media (width >= 40rem) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility padding-y {
+  padding-block: 3rem;
+  @media (width >= 40rem) {
+    padding-block: 6rem;
+  }
+}
+
+@utility padding-l {
+  padding-left: 2rem;
+  @media (width >= 40rem) {
+    padding-left: 4rem;
+  }
+}
+
+@utility padding-r {
+  padding-right: 2rem;
+  @media (width >= 40rem) {
+    padding-right: 4rem;
+  }
+}
+
+@utility padding-t {
+  padding-top: 3rem;
+  @media (width >= 40rem) {
+    padding-top: 6rem;
+  }
+}
+
+@utility padding-b {
+  padding-bottom: 3rem;
+  @media (width >= 40rem) {
+    padding-bottom: 6rem;
+  }
+}
+
+@utility info-text {
+  font-family: var(--font-montserrat);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--color-slate-gray);
+}
+
+@utility input {
+  min-width: 0;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--color-slate-gray);
+  border-radius: 9999px;
+  font-family: var(--font-montserrat);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-slate-gray);
+}

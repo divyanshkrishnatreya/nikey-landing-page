@@ -1,11 +1,6 @@
 /* Import the font */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Base Tailwind utilities (these will be used directly in your HTML/JSX) */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Custom Styles without @apply */
 :root {
     --radius: 0.5rem;
