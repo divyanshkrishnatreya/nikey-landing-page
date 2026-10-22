@@ -1,23 +1,50 @@
-# React + Vite
+# Nike Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React and Vite landing page inspired by Nike product marketing pages.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app renders a polished product landing page with navigation, hero content, popular products, quality messaging, service highlights, special offers, customer reviews, subscription CTA, and footer sections.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Section-based landing page architecture.
+- Tailwind-style utility classes and custom CSS.
+- Reusable constants for navigation, products, services, reviews, and footer links.
+- Responsive sections for product marketing content.
 
-## Workspace Project Notes
+## Project Structure
 
-- Type: Vite React app
-- Stack: React, Vite, Tailwind CSS
-- Run / entry point: `npm install; npm run dev`
-- GitHub status: Uploaded already: divyanshkrishnatreya/nikey-landing-page
-- Notes: Nike landing page frontend.
+```text
+nike/
+  src/
+    components/      Reusable UI pieces such as buttons/cards
+    constants/       Product, navigation, service, and review data
+    sections/        Landing page sections
+    App.jsx          Page composition
+    main.jsx         React entry point
+  public/            Static assets
+  index.html
+  vite.config.js
+```
 
-Do not commit local environment files, generated dependency folders, build output, or private credentials.
+## Getting Started
 
+```bash
+npm install
+npm run dev
+```
+
+## Scripts
+
+- `npm run dev` starts Vite.
+- `npm run build` creates a production bundle.
+- `npm run preview` serves the build locally.
+- `npm run lint` runs ESLint.
+
+## Editing Guide
+
+- Add or reorder page sections in `src/App.jsx`.
+- Update product/review/service data in `src/constants/`.
+- Add section-level layouts in `src/sections/`.
+- Keep static images under `public/` so Vite can serve them directly.
